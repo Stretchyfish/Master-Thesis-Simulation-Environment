@@ -1,0 +1,5 @@
+The code for rendering the graphs to the screen comes from code monkeys tutorial series:
+
+Link: https://www.youtube.com/playlist?list=PLzDRvYVwl53v5ur4GluoabyckImZz3TVQ
+
+Will be very simular to this project: https://unitycodemonkey.com/video.php?v=CmU5-v-v1Qo
