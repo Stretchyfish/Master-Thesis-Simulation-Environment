@@ -145,10 +145,10 @@ public class GenericController : MonoBehaviour
             DebugPCoMIsCorrect = IsStaticallyStable();
             DebugIsStable = IsStable();
             DebugComulativeStability += StaticStabilityMargin();
-            DebugComulativeDynamicStability += DynamicStabilityMargin(-44 / 4, 44 / 4, -64 / 4, 64 / 4);
+            DebugComulativeDynamicStability += DynamicStabilityMargin(-12.268f, 12.268f, -17.665f, 17.665f);
 
             DebugStaticStability = StaticStabilityMargin();
-            DebugDynamicStability = DynamicStabilityMargin(-44 / 4, 44 / 4, -64 / 4, 64 / 4);
+            DebugDynamicStability = DynamicStabilityMargin(-12.268f, 12.268f, -17.665f, 17.665f);
 
             DebugAverageDynamicStabilityMargin = DebugComulativeDynamicStability / NumberOfStabilityMeasurements;
             DebugAverageStabilityMargin = DebugComulativeStability / NumberOfStabilityMeasurements;
@@ -1733,7 +1733,7 @@ public class GenericController : MonoBehaviour
     public bool IsStable()
     {
         float StaticStability = StaticStabilityMargin();
-        float DynamicStability = DynamicStabilityMargin(-44 / 2, 44 / 2, -64 / 2, 64 / 2);
+        float DynamicStability = DynamicStabilityMargin(-12.268f, 12.268, -17.665f, 17.665f);
 
         if(StaticStability <= 0)
         {
